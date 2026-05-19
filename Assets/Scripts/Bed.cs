@@ -111,7 +111,7 @@ public class Bed : MonoBehaviour
         DialogueBox db = FindAnyObjectByType<DialogueBox>();
         if (db != null)
         {
-            db.ShowMessage("You wake up in " + currentSeason.ToString() + "!");
+            db.ShowMessage("3 months later...");
         }
     }
     
