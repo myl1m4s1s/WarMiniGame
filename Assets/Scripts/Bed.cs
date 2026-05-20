@@ -76,6 +76,16 @@ public class Bed : MonoBehaviour
     
     private void TrySleep()
     {
+        if (currentSeason == Season.Winter)
+        {
+            DialogueBox db = FindAnyObjectByType<DialogueBox>();
+            if (db != null)
+            {
+                db.ShowMessage("Winter is over. The game ends at the mailbox.");
+            }
+            return;
+        }
+        
         if (AreAllTasksDone())
         {
             StartCoroutine(SleepAndAdvanceSeason());
@@ -111,7 +121,7 @@ public class Bed : MonoBehaviour
         DialogueBox db = FindAnyObjectByType<DialogueBox>();
         if (db != null)
         {
-            db.ShowMessage("3 months later...");
+            db.ShowMessage("You wake up in " + currentSeason.ToString() + "!");
         }
     }
     
@@ -129,12 +139,7 @@ public class Bed : MonoBehaviour
                 currentSeason = Season.Winter;
                 break;
             case Season.Winter:
-                Debug.Log("Game Complete! You survived all seasons!");
-                DialogueBox db = FindAnyObjectByType<DialogueBox>();
-                if (db != null)
-                {
-                    db.ShowMessage("Congratulations! You've completed all seasons!");
-                }
+                Debug.Log("Game Complete!");
                 break;
         }
     }

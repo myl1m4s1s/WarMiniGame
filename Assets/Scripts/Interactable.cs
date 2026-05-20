@@ -11,16 +11,16 @@ public class Interactable : MonoBehaviour
     [TextArea]
     public string winterMessage;
     
+    public string taskName;
+    public bool isDone;
+    
     private bool _playerNear;
     private SpriteRenderer _objectSprite;
-    private Color _originalColor;
     private DialogueBox _dialogueBox;
-    private string currentMessage;
     
+    protected Color _originalColor;
+    protected string currentMessage;
     protected GameObject Player;
-
-    public bool isDone;
-    public string taskName;
     
     void Start()
     {

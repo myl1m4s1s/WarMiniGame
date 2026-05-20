@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Window : Interactable
 {
@@ -10,14 +11,66 @@ public class Window : Interactable
     public Sprite fallImage;
     public Sprite winterImage;
     
-    public float displayDuration = 3f;
+    private bool isPanelOpen = false;
     
     public override void Interact()
     {
-        base.Interact();
+        if (isDone) return;
         
+        OpenWindowPanel();
+    }
+    
+    void Update()
+    {
+        if (isPanelOpen && Input.GetKeyDown(KeyCode.W))
+        {
+            CloseWindowPanel();
+        }
+    }
+    
+    private void OpenWindowPanel()
+    {
         UpdateWindowImage();
-        ShowWindowImage();
+        
+        if (windowImagePanel != null)
+        {
+            windowImagePanel.SetActive(true);
+            isPanelOpen = true;
+            Time.timeScale = 0f;
+        }
+    }
+    
+    private void CloseWindowPanel()
+    {
+        if (windowImagePanel != null)
+        {
+            windowImagePanel.SetActive(false);
+            isPanelOpen = false;
+            Time.timeScale = 1f;
+            
+            isDone = true;
+            
+            Collider2D col = GetComponent<Collider2D>();
+            if (col != null)
+                col.enabled = false;
+            
+            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+            if (sprite != null)
+                sprite.color = _originalColor;
+            
+            StartCoroutine(ShowMessageWithDelay());
+        }
+    }
+    
+    private IEnumerator ShowMessageWithDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        
+        DialogueBox db = FindAnyObjectByType<DialogueBox>();
+        if (db != null && !string.IsNullOrEmpty(currentMessage))
+        {
+            db.ShowMessage(currentMessage);
+        }
     }
     
     private void UpdateWindowImage()
@@ -44,23 +97,6 @@ public class Window : Interactable
                         windowImage.sprite = winterImage;
                     break;
             }
-        }
-    }
-    
-    private void ShowWindowImage()
-    {
-        if (windowImagePanel != null)
-        {
-            windowImagePanel.SetActive(true);
-            Invoke(nameof(HideWindowImage), displayDuration);
-        }
-    }
-    
-    private void HideWindowImage()
-    {
-        if (windowImagePanel != null)
-        {
-            windowImagePanel.SetActive(false);
         }
     }
 }

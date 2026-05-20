@@ -51,6 +51,8 @@
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Bed.cs" />
+    <Compile Include="Assets\Scripts\StartScreen.cs" />
+    <Compile Include="Assets\Scripts\Mailbox.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Window.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
