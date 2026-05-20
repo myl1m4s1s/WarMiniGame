@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d7bfe416d8b8f64c8da5f0990b0995e
+guid: 10cdccc37cdd9d542be5fb16ea3ee2d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8070686850402279387
-    second: Radio_0
+      213: 3830738508132287133
+    second: Laundry 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Radio_0
+      name: Laundry 1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 10
-        width: 58
-        height: 44
+        x: 6
+        y: 12
+        width: 53
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5202b54e1192fff80800000000000000
-      internalID: -8070686850402279387
+      spriteID: d9282a48064892530800000000000000
+      internalID: 3830738508132287133
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Radio_0: -8070686850402279387
+      Laundry 1_0: 3830738508132287133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
