@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1538668f018e7246aa5153ba0d33f15
+guid: 6db5ec0e38d0a224cac5b92d66634128
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4427026210493128679
-    second: Winter_0
+      213: -2630152088849649527
+    second: Magazines2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Winter_0
+      name: Magazines2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2889
-        height: 3508
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ef59cf02e4ff6d30800000000000000
-      internalID: 4427026210493128679
+      spriteID: 9807dde3c92df7bd0800000000000000
+      internalID: -2630152088849649527
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Winter_0: 4427026210493128679
+      Magazines2_0: -2630152088849649527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
