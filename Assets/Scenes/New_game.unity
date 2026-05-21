@@ -12768,14 +12768,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 910565684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc135b969965cc446b90e427c0459d96, type: 3}
+  m_Script: {fileID: 11500000, guid: f129a5bf7d6b31c4d95c6b1ef703398a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleInteractable
-  springMessage: The same music as they always play.
-  summerMessage: '"Things are getting more tense on the Western front. Troops are
-    proceeding with caution."'
-  fallMessage: I remember when we used to dance to this song..
-  winterMessage: '*Static*... Nothing today? How odd.'
+  springMessage: Nothing interesting on today
+  summerMessage: Oh, how we used to dance to this song!
+  fallMessage: '"Troops begin to line up as things reportedly get more tense at borders"'
+  winterMessage: '**Static** Hm? How odd.'
   taskName: Radio
   isDone: 0
 --- !u!61 &910565686
@@ -13877,7 +13876,7 @@ MonoBehaviour:
   mailImage: {fileID: 1296833431}
   endScreenPanel: {fileID: 702809401}
   winterMailSprite: {fileID: -4181906289457810447, guid: d996a59633688cf4f8ba6ef8d678ab0d, type: 3}
-  springMailSprite: {fileID: -4181906289457810447, guid: d996a59633688cf4f8ba6ef8d678ab0d, type: 3}
+  springMailSprite: {fileID: 6539401658963365025, guid: c21d3882a6a05fc44bd5cfb34dad3479, type: 3}
   fallMailSprite: {fileID: -2630152088849649527, guid: 6db5ec0e38d0a224cac5b92d66634128, type: 3}
 --- !u!1 &1296833429
 GameObject:
@@ -14979,11 +14978,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1781030551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc135b969965cc446b90e427c0459d96, type: 3}
+  m_Script: {fileID: 11500000, guid: f129a5bf7d6b31c4d95c6b1ef703398a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleInteractable
   springMessage: I always forget to water.
-  summerMessage: Looking a bit dry.. I'll have to check more often.
+  summerMessage: So dry.. I have to start watering more often.
   fallMessage: Still alive.
   winterMessage: ...
   taskName: Plant
@@ -15286,7 +15285,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1788620339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 802d8ffcf84346e4d859e3522a118f83, type: 3}
+  m_Script: {fileID: 11500000, guid: 1af39c49e95567f4c9618f0fbbf0c624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 10
@@ -15340,13 +15339,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1855408338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc135b969965cc446b90e427c0459d96, type: 3}
+  m_Script: {fileID: 11500000, guid: f129a5bf7d6b31c4d95c6b1ef703398a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleInteractable
-  springMessage: It's easier doing laundry for one. I'm not quite sure I prefer it
-    though.
-  summerMessage: All done.
-  fallMessage: Same thing every day..
+  springMessage: It's easier doing laundry for one. Not quite sure I prefer it though.
+  summerMessage: These chores are never ending.
+  fallMessage: Back to it.
   winterMessage: ...
   taskName: Laundry
   isDone: 0
